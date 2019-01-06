@@ -21,4 +21,4 @@ for c in ciphertext.upper():
 
 print ("Original Text : {}".format(plaintext))
 print ("Encrypted Text : {}".format(ciphertext))
-print ("Encrypted Text : {}".format(plaintext2))
+print ("Decrypted Text : {}".format(plaintext2))
