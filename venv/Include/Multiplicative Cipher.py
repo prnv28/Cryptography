@@ -1,6 +1,6 @@
 # Multiplicative Cipher
 
-key1 = int(input("Enter K : "))
+key1 = int(input("Enter Key : "))
 
 # Find Multiplicative Inverse of given key
 def modInverse(a, m) :

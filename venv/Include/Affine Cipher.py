@@ -4,7 +4,7 @@
 L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",range(26)))
 I2L = dict(zip(range(26),"ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 key = 3
-key1 = int(input("Enter K : "))
+key1 = int(input("Enter Key : "))
 
 # Find Multiplicative Inverse of given key
 def modInverse(a, m) :
@@ -38,7 +38,8 @@ for c in ciphertext.upper():
     if c == ' ' or c == '\n' or c == '!':
         plaintext2 = plaintext2 + c
     else:
-        plaintext2 = plaintext2 + I2L[ (L2I[chr((((ord(c) - 65) * key2) % 26) + 65)] - key)%26 ]
+        plaintext2 += chr((((ord(I2L[(L2I[c] - key) % 26]) - 65) * key2) % 26) + 65)
+
 
 print ("Original Text : {}".format(plaintext))
 print ("Encrypted Text : {}".format(ciphertext))
