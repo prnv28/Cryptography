@@ -1,9 +1,11 @@
+# Caesar Cipher
+
 # letters to ints and the inverse
 L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",range(26)))
 I2L = dict(zip(range(26),"ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
 key = 3
-plaintext = "YOU WILL NEVER KNOW."
+plaintext = "YOU WILL NEVER KNOW!!!"
 
 # encipher
 ciphertext = ""
