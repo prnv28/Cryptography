@@ -8,7 +8,6 @@ print("Plain Text : \n{}".format(plaintext))
 print("Key : \n{}".format(key))
 print("Cipher Text : \n{}".format(ciphertext))
 
-
 # Find Multiplicative Inverse of given key
 def modInverse(a, m) :
     a = a % m;
